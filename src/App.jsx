@@ -4,7 +4,7 @@ import Category from './Pages/category/category';
 import Contact from './Pages/contact/Contact';
 import Footer from './Pages/footer/Footer';
 import Home from './Pages/home/home';
-import Menu from './Pages/menu/Menu';
+import Menu from './Pages/menu/menu';
 import Navbar from './Pages/navbar/Navbar';
 import Promo from './Pages/prom/Promo';
 import Review from './Pages/review/Review';

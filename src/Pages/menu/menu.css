@@ -1,0 +1,114 @@
+.menu-section {
+  padding: 40px 20px;
+  background-color: #2605e4; /* White background for a clean look */
+  text-align: center; 
+  border-radius: 8px; /* Rounded corners for the section */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.menu-header h2 {
+  font-size: 2.5rem;
+  color: white; /* Dark text for headings */
+  margin-bottom: 20px;
+}
+
+.menu-header p {
+  font-size: 1rem;
+  color: white; /* Gray text for description */
+  margin-bottom: 30px;
+}
+
+.menu-categories {
+  margin-bottom: 30px; /* Space below categories */
+}
+
+.menu-button-group {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 15px; /* Space between buttons */
+}
+
+.menu-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff; /* White text for buttons */
+  background-color: #067dfd; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+.menu-button:hover {
+  background-color: #b4c237; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.menu-button.active {
+  background-color: #a2a506; /* Darker shade for active button */
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  margin:0 5%;
+}
+
+.menu-item {
+  background-color: #2c0597; /* Light gray background for menu items */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Flexbox for image and details */
+  padding: 20px; /* Padding inside items */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.menu-item:hover {
+  transform: scale(1.05); 
+  background-color: #9ab926; /* Slightly enlarge on hover */
+}
+
+.item-image {
+  width: 80px; /* Fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for images */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.item-details {
+  flex-grow: 1; /* Allow details to fill available space */
+}
+
+.item-details h4 {
+  font-size: 1.5rem; /* Heading size */
+  margin: 0 0 10px; /* Space below heading */
+  color: white; /* Dark text for headings */
+}
+
+.item-details p {
+  font-size: 0.9rem; /* Description size */
+  color: white; /* Gray text for description */
+  margin-bottom: 10px; /* Space below description */
+}
+
+.item-price {
+  font-weight: bold; /* Bold price */
+  color: yellow; /* Dark text for price */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-header h2 {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  .menu-item h4 {
+      font-size: 1.2rem; /* Smaller heading size on mobile */
+  }
+
+  .menu-item {
+      padding: 15px; /* Reduce padding on mobile */
+  }
+}

@@ -1,0 +1,107 @@
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center vertically */
+  padding: 40px 20px; /* Spacing around the section */
+  background-color: #0513d3; /* Light background for contrast */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.about-content {
+  max-width: 600px; /* Limit width for better readability */
+  text-align: center; /* Center text */
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: white; /* Dark text for headings */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: white; /* Gray text for paragraphs */
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: grid; /* Use grid layout for two columns */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 10px 0;
+}
+
+.about-list li {
+  font-size: 1rem;
+  color: white; /* Dark text for list items */
+  margin: 10px 0; /* Space between items */
+}
+
+.about-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px; /* Space above button */
+  transition: background-color 0.3s;
+}
+
+.about-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.about-image {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-left: 20px; /* Space between text and image */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+  animation: zoomIn 0.5s ease; /* Animation for the image */
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8); /* Start slightly smaller */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: scale(1); /* End at original size */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+      flex-direction: column; /* Stack content on smaller screens */
+      align-items: center; /* Center items */
+  }
+
+  .about-image {
+      margin-left: 0; /* Remove margin on mobile */
+      margin-top: 10px;
+      margin-bottom: 80px;
+      width: 90%;
+      height: 211px; /* Space above image */
+  }
+
+  .about-content h2 {
+      font-size: 1.5rem; /* Smaller font size on mobile */
+  }
+
+  .about-button {
+      padding: 8px 15px; /* Smaller button on mobile */
+  }
+
+
+  .about-list {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);/* One column on mobile */
+  }
+}

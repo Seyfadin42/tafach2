@@ -1,0 +1,121 @@
+.category-section {
+  padding: 40px 20px;
+  background-color: #120fee; /* Dark background for contrast */
+  text-align: center;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.category-item {
+  background-color: #020597; /* Dark background for each category */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  margin: 15px;
+  display: flex; /* Use flexbox for better alignment */
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items */
+  padding: 20px;
+  width: 280px; /* Fixed width for uniformity */
+  transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.category-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.category-image {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.category-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional rounding for images */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.category-image img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.category-info {
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: white; /* Dark text for headings */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #e0e0e0; /* Lighter gray text for descriptions */
+  margin-bottom: 15px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #060052; /* Darker button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
+}
+
+.one{
+  background-color: rgb(160, 160, 62);
+}
+.two{
+  background-color: tomato;
+}
+.three{
+  background-color: green;
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-container {
+      justify-content: center; /* Center categories on smaller screens */
+  }
+
+  .category-image img {
+      max-width: 85%;
+      height: 222px; /* Maintain aspect ratio */
+      border-radius: 10px; /* Optional rounding for images */
+  }
+
+  .category-item {
+      width: 90%; /* Full width on mobile */
+  }
+
+  .category-title {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  h4 {
+      font-size: 1.3rem; /* Slightly smaller heading size on mobile */
+  }
+
+  p {
+      font-size: 0.9rem; /* Smaller paragraph size on mobile */
+  }
+}

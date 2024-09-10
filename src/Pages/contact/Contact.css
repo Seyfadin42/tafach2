@@ -1,0 +1,64 @@
+/* Contact.css */
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(23, 23, 204);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  flex-grow: 1; /* Allow input to grow */
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex-grow: 1; /* Allow input to grow */
+}
+
+.icon {
+  color: #0bdb2e; 
+  font-size: 33px;/* Icon color */
+}
+
+.subscribe-button {
+  background-color: #230a5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-button:hover {
+  background-color: #6928ff;
+}

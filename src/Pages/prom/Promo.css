@@ -1,0 +1,95 @@
+.promo-section {
+  padding: 20px 10px; /* Reduced padding for a smaller height */
+  background-color: #120fee; /* Dark background for contrast */
+  text-align: center;
+}
+
+.promo-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px; /* Reduced margin for a compact look */
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.promo-item {
+  background-color: #8b257a; /* Darker background for each promo item */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 15px;
+  padding: 15px; /* Reduced padding for a smaller item */
+  width: 280px; /* Fixed width for uniformity */
+  transition: transform 0.3s; /* Animation for hover effect */
+  color: white; /* Text color for promo items */
+}
+
+.promo-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.promo-image {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.promo-image img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Limit height for images */
+  border-radius: 10px; /* Optional rounding for images */
+}
+
+.promo-tag {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.promo-discount {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.promo-description {
+  font-size: 0.9rem;
+  color: #e0e0e0; /* Lighter gray for descriptions */
+  margin-bottom: 10px; /* Reduced margin for compactness */
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 8px 15px; /* Slightly smaller button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for scaling */
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .promo-container {
+      justify-content: center; /* Center promos on smaller screens */
+  }
+
+  .promo-item {
+      width: 90%; /* Full width on mobile */
+  }
+
+  .promo-title {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  .promo-image img {
+      max-height: 120px; /* Reduced height for mobile images */
+  }
+}

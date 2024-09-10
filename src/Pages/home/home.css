@@ -1,0 +1,115 @@
+.hero-section {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align horizontally */
+  padding: 20px;
+  background-color: #0f1cd1; /* Dark blue background for a bold look */
+  color: white; /* Change text color for contrast */
+}
+
+.hero-image {
+  flex: 1; /* Allow the image area to take up space */
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+}
+
+.hero-image img {
+  max-width: 100%;
+  max-height: 555px;
+  height: auto;
+  /* Remove border radius */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+  animation: bounce 2s infinite; /* Apply animation */
+}
+
+/* Animation for the image */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Move up 10px */
+  }
+}
+
+.hero-content {
+  flex: 1; /* Allow content to take up the remaining space */
+  margin-left: 20px; /* Space between image and text */
+  text-align: left; /* Align text to the left */
+}
+
+h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  color: #ffffff; /* White text for contrast */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #e0e0e0; /* Lighter gray for better readability */
+  max-width: 800px; /* Limit paragraph width */
+  margin: 0 auto 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.icon-item {
+  flex: 1 1 150px; /* Make items flexible and responsive */
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem; /* Increase icon size */
+  transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.icon-item:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #01024d; /* Bright accent color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
+}
+
+.learn-more:hover {
+  background-color: #072bfc; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column; /* Stack elements on smaller screens */
+      text-align: center; /* Center-align text */
+  }
+
+  .hero-image {
+      justify-content: center; /* Center image on small screens */
+      margin-bottom: 20px;
+  }
+  .hero-image img{
+    height: 444px;
+  }
+  .hero-content {
+      margin-left: 0; /* No margin on mobile */
+      text-align: center; /* Center text on mobile */
+  }
+
+  h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  p {
+      font-size: 1rem; /* Smaller paragraph size on mobile */
+  }
+}

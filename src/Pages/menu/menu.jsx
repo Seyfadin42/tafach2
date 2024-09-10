@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Menu.css';
+import './menu.css';
 
 function Menu() {
     const [activeCategory, setActiveCategory] = useState('All');
@@ -29,7 +29,7 @@ function Menu() {
             <div className="menu-header">
                 <h2>OUR BEST MENU</h2>
                 <p>
-                    Discover our delicious menu full of mouth-watering options. Whether you're in the mood for a hearty meal or a light snack, we have something for everyone!
+                    Discover our delicious menu full of mouth-watering options. Whether you are in the mood for a hearty meal or a light snack, we have something for everyone!
                 </p>
             </div>
             <div className="menu-categories">
